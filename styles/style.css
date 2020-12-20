@@ -9,7 +9,7 @@
   font-family: 'Helvetica Neue', Arial, sans-serif;
   color: #000000;
 }
-
+/*стили для шапки*/
 .header {
   height: 100vh;
   min-height: 600px;
@@ -21,10 +21,11 @@
   /* выше установили ограничения для секции */
 }
  
-/*разобраться с логотипами*/
 .logo {
   z-index: 1;
   width: 183px;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .logo_place_header {
@@ -67,8 +68,8 @@ z-index: 3;
 
 .main-illustration {
   position: absolute;
-  right: 0px;
-  bottom: 0px;
+  right: 0;
+  bottom: 0;
   width: 765px;
   height: 608px;
   z-index: 2;
@@ -80,11 +81,11 @@ z-index: 3;
   width: 568px;
   position: absolute;
   top: 64px;
-  right: 0px;
+  right: 0;
   z-index: 1;
   background-color: #2f80ed;
 }
-
+/*Стили секции description*/
 .description {
   margin-top: 100px;
 }
@@ -101,8 +102,8 @@ z-index: 3;
   display: flex;
   align-items: stretch;
   width: 175px;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   color: #2f80ed;
   line-height: 1.2;
   font-size: 18px;
@@ -118,8 +119,8 @@ z-index: 3;
 }
 
 .paragraph {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   display: flex;
   line-height: 34px;
   font-size: 24px;
@@ -136,7 +137,7 @@ z-index: 3;
   font-size: 24px;
   font-weight: 600;
 }
-
+/*Стили для секции digits*/
 .digits {
   display: flex;
   flex-direction: column;
@@ -159,7 +160,7 @@ z-index: 3;
 .section-subtitle {
   display: flex;
   justify-content: center;
-  margin: 0px;
+  margin: 0;
   width: 60%;
   line-height: 34px;
   font-size: 24px;
@@ -169,7 +170,7 @@ z-index: 3;
 .table {
   width: 1100px;
   display: flex;
-  margin: 0px auto 100px;
+  margin: 0 auto 100px;
   align-content: flex-start;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -184,19 +185,19 @@ z-index: 3;
 }
 
 .heading {
-  margin: 0px;
+  margin: 0;
   line-height: 1.15;
   font-size: 24px;
   font-weight: 600;
 }
 
 .text {
-  margin: 20px 0px 0px;
+  margin: 20px 0 0;
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
 }
-
+/*Стили для секции feynman*/
 .feynman {
   height: 790px;
   margin-top: 100px;
@@ -204,7 +205,6 @@ z-index: 3;
   background-position: bottom left;
   background-repeat: no-repeat;
   background-size: 867px 637px;
-  
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -214,7 +214,7 @@ z-index: 3;
 
 .feynman__title {
   width: 648px;
-  margin: 0px auto 70px;
+  margin: 0 auto 70px;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -224,7 +224,7 @@ z-index: 3;
 }
 
 .feynman__subtitle {
-  margin: 0px;
+  margin: 0;
   display: flex;
   justify-content: center;
   line-height: 51px;
@@ -240,7 +240,7 @@ z-index: 3;
   font-size: 36px;
   font-weight: normal;
 }
-
+/*Стили для секции kaufman*/
 .kaufman {
   display: flex;
   flex-direction: column;
@@ -285,11 +285,11 @@ z-index: 3;
   z-index: 0;
   position: absolute;
   right: -210px;
-  top: 0px;
+  top: 0;
   width: 877px;
   height: 877px;
 }
-
+/*Стили для секции footer*/
 .footer {
   min-height: 350px;
   display: flex;
@@ -316,11 +316,12 @@ z-index: 3;
   background-image: url(../images/logo_place_footer.svg);
   height: 35px;
   display: flex;
+  justify-content: center;
 }
 
 .author {
   display: flex;
-  margin: 18px 0px;
+  margin: 18px 0;
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
@@ -334,7 +335,7 @@ z-index: 3;
 .column-heading {
   display: flex;
   flex-direction: column;
-  margin: 0px;
+  margin: 0;
   line-height: 30px;
   font-size: 18px;
   font-weight: 600;
@@ -343,7 +344,7 @@ z-index: 3;
 .column-links{
   display: flex;
   flex-direction: column;
-  margin: 20px 0px 16px;
+  margin: 20px 0 16px;
   justify-content: flex-start;
 }
 
@@ -355,6 +356,7 @@ z-index: 3;
   font-size: 18px;
   font-weight: normal;
   color: #f2f2f2;
+  text-decoration: none;
 }
 
 .column__content_social {
