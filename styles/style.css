@@ -36,9 +36,9 @@
   height: 32px;
 }
 
-.title {
+.header__title {
   display: flex;
-  margin-left: 64px;
+  margin: 0 0 0 64px;
   width: 730px;
   line-height: 96px;
   font-size: 102px;
@@ -48,10 +48,11 @@
 поверх других блоков*/
 }
 
-.subtitile {
+.header__subtitile {
 position: absolute;
 left: 64px;
 bottom: 30px;
+margin: 0;
 width: 388px;
 line-height: 25px;
 font-size: 18px;
@@ -98,7 +99,7 @@ z-index: 3;
   margin: 100px auto;
 }
 
-.brief {
+.two-columns__brief {
   display: flex;
   align-items: stretch;
   width: 175px;
@@ -110,7 +111,7 @@ z-index: 3;
   font-weight: normal;
 }
 
-.main-text {
+.two-columns__main-text {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -118,21 +119,19 @@ z-index: 3;
   min-width: 784px;
 }
 
-.paragraph {
-  margin: 0;
+.two-columns__paragraph {
   padding: 0;
-  display: flex;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
+  margin: 0 0 30px 0;
+}
+
+.two-columns__paragraph:last-child {
+  margin: 0;
 }
 
 .paragraph__span-accent {
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-
-.span_accent {
   line-height: 34px;
   font-size: 24px;
   font-weight: 600;
@@ -149,8 +148,7 @@ z-index: 3;
 .section-title {
   display: flex;
   width: 60%;
-  margin-top: 100px;
-  margin-bottom: 20px;
+  margin: 0 0 20px 0;
   justify-content: center;
   line-height: 1.15;
   font-size: 60px;
@@ -176,7 +174,7 @@ z-index: 3;
   justify-content: space-between;
 }
 
-.cell {
+.table__cell {
   width: 250px;
   display: flex;
   flex-direction: column;
@@ -184,14 +182,14 @@ z-index: 3;
   margin-top: 60px;
 }
 
-.heading {
+.table__heading {
   margin: 0;
   line-height: 1.15;
   font-size: 24px;
   font-weight: 600;
 }
 
-.text {
+.table__text {
   margin: 20px 0 0;
   line-height: 1.2;
   font-size: 18px;
@@ -200,11 +198,12 @@ z-index: 3;
 /*Стили для секции feynman*/
 .feynman {
   height: 790px;
-  margin-top: 100px;
+  padding-top: 100px;
   background-image: url(../images/feynman.png);
   background-position: bottom left;
   background-repeat: no-repeat;
   background-size: 867px 637px;
+  background-color: #f2f2f2;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -239,6 +238,8 @@ z-index: 3;
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
+  color: #2f80ed;
+  text-decoration: none;
 }
 /*Стили для секции kaufman*/
 .kaufman {
@@ -254,6 +255,7 @@ z-index: 3;
 .section-title_theme_dark {
   color: white;
   z-index: 1;
+  padding-top: 90px;
 }
 
 .section-subtitle_theme_dark {
@@ -281,13 +283,15 @@ z-index: 3;
   color: white;
 }
 
-.triangle {
+.kaufman__triangle {
+  width: 877px;
+  height: 877px;
   z-index: 0;
   position: absolute;
   right: -210px;
   top: 0;
-  width: 877px;
-  height: 877px;
+  background-image: url(../images/kaufman-triangle.svg);
+  background-size: cover;
 }
 /*Стили для секции footer*/
 .footer {
@@ -297,7 +301,7 @@ z-index: 3;
   background-color: #1f1f1f;
 }
 
-.columns {
+.footer__columns {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -305,10 +309,13 @@ z-index: 3;
   margin: 60px auto 40px;
 }
 
-.column__content_copyright {
+.footer__column {
   display: flex;
-  flex-basis: 711px;
   flex-direction: column;
+}
+
+.footer__column_content_copyright {
+  flex-basis: 711px;
   justify-content: space-between;
 }
 
@@ -319,7 +326,7 @@ z-index: 3;
   justify-content: center;
 }
 
-.author {
+.footer__author {
   display: flex;
   margin: 18px 0;
   line-height: 25px;
@@ -327,12 +334,7 @@ z-index: 3;
   font-weight: normal;
 }
 
-.column__content_info {
-  display: flex;
-  flex-direction: column;
-}
-
-.column-heading {
+.footer__column-heading {
   display: flex;
   flex-direction: column;
   margin: 0;
@@ -341,14 +343,17 @@ z-index: 3;
   font-weight: 600;
 }
 
-.column-links{
+.footer__column-links{
   display: flex;
   flex-direction: column;
   margin: 20px 0 16px;
   justify-content: flex-start;
+  list-style: none;
+  text-indent: -1em
 }
 
-.column-link {
+
+.footer__column-link {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -359,12 +364,7 @@ z-index: 3;
   text-decoration: none;
 }
 
-.column__content_social {
-  display: flex;
-  flex-direction: column;
-}
-
-.social-icon {
+.footer__social-icon {
   display: flex;
   flex-direction: row;
   background-position: center;
