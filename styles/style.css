@@ -349,9 +349,8 @@ z-index: 3;
   margin: 20px 0 16px;
   justify-content: flex-start;
   list-style: none;
-  text-indent: -1em
+  text-indent: -1em;
 }
-
 
 .footer__column-link {
   display: flex;
