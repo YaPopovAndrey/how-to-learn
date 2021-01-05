@@ -1,5 +1,5 @@
 .feynman {
-    height: 790px;
+    min-height: 790px;
     padding-top: 80px;
     background-image: url(../../images/feynman/feynman.png);
     background-position: bottom left;
@@ -11,5 +11,4 @@
     justify-content: flex-start;
     align-items: center;
     position: relative;
-    transform: translateY(-60px);
   }

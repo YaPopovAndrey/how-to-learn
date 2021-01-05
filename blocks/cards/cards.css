@@ -4,4 +4,6 @@
   justify-content: flex-start;
   align-items: flex-start;
   flex-wrap: wrap;
+  list-style: none;
+  padding-left: 0;
 }
