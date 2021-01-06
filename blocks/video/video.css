@@ -1,8 +1,7 @@
 .video {
-  padding-top: 40px;
+  padding-top: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  transform: translateY(60px);
 }
